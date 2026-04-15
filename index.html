@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flora Botanica · A Private Membership Association</title>
+  <meta name="description" content="Terrain-based botanical medicine, microscopy, and the slow work of tending the body." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">Flora Botanica</a>
+      <nav class="site-nav">
+        <a href="#approach">Approach</a>
+        <span class="nav-divider">·</span>
+        <a href="#membership">Membership</a>
+        <span class="nav-divider">·</span>
+        <a href="#journal">Journal</a>
+        <span class="nav-divider">·</span>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+  <div class="fb-page" data-page="home" data-title="Home">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container center">
+        <p class="eyebrow">A Private Membership Association</p>
+        <h1>Healing is a <em>lifelong journey</em> <br/>— not a quick fix.</h1>
+        <p class="lead">Terrain-based botanical medicine, microscopy, and the slow work of tending the body.</p>
+        <div class="hero-cta">
+          <a href="#membership" class="btn btn-primary">Become a Member</a>
+          <a href="#approach" class="btn btn-ghost">Our Approach</a>
+        </div>
+        <div class="hairline"></div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section id="approach" class="section">
+      <div class="container two-col">
+        <div class="col">
+          <p class="eyebrow">The Approach</p>
+          <h2>Medicine that <em>listens</em> <br/>before it prescribes.</h2>
+        </div>
+        <div class="col">
+          <p>We work slowly. We look closely. We treat the terrain — the living body and its ecology — rather than chasing symptoms one at a time.</p>
+          <p>Every protocol is formulated in-house from whole-plant extracts, paired with live and dried blood microscopy, and refined over seasons of direct practice.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILLARS -->
+    <section class="section pillars-section">
+      <div class="container">
+        <div class="pillars">
+          <article class="pillar">
+            <p class="pillar-num">01</p>
+            <h3>Apothecary</h3>
+            <p>Small-batch herbal formulations — tinctures, elixirs, and ferments — made from plants we know by name.</p>
+          </article>
+          <article class="pillar">
+            <p class="pillar-num">02</p>
+            <h3>Microscopy</h3>
+            <p>Live &amp; dried blood analysis as a window into terrain — oxidative stress, mineral status, and systemic patterns.</p>
+          </article>
+          <article class="pillar">
+            <p class="pillar-num">03</p>
+            <h3>Wellness</h3>
+            <p>Seasonal protocols, one-to-one consultations, and the slow accumulation of changes that actually hold.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMBERSHIP -->
+    <section id="membership" class="section section-dark">
+      <div class="container center">
+        <p class="eyebrow light">Membership</p>
+        <h2 class="light">A <em>private</em> practice, <br/>by invitation and application.</h2>
+        <p class="lead light">Flora Botanica operates as a Private Membership Association. Members receive access to consultations, formulations, microscopy, and the journal.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary-light">Request an Application</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNAL TEASE -->
+    <section id="journal" class="section">
+      <div class="container">
+        <div class="section-hd">
+          <p class="eyebrow">Journal</p>
+          <h2>Field notes from the <em>apothecary</em>.</h2>
+        </div>
+        <div class="journal-grid">
+          <article class="entry">
+            <p class="entry-meta">Spring · Terrain</p>
+            <h3>On the Quiet Medicine of Nettle</h3>
+            <p>A plant that arrives without being asked, and asks very little in return.</p>
+          </article>
+          <article class="entry">
+            <p class="entry-meta">Summer · Microscopy</p>
+            <h3>What Blood Tells Us About Stress</h3>
+            <p>The shapes under the lens — and why they change before symptoms do.</p>
+          </article>
+          <article class="entry">
+            <p class="entry-meta">Autumn · Practice</p>
+            <h3>The Slow Protocol</h3>
+            <p>Why changes that hold take a season, not a week.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <div class="container center">
+        <p class="eyebrow">Contact</p>
+        <h2>Begin the <em>conversation</em>.</h2>
+        <p class="lead">For membership inquiries, applications, and correspondence.</p>
+        <p class="contact-line"><a href="mailto:hello@floralbotanicalmedicine.com">hello@floralbotanicalmedicine.com</a></p>
+        <p class="contact-line soft">By appointment · Members only</p>
+      </div>
+    </section>
+
+  </div><!-- /.fb-page -->
+  </main>
+
+  <script>
+    (function(){
+      function route(){
+        var raw = (location.hash || '').replace(/^#\/?/, '');
+        var pages = document.querySelectorAll('.fb-page');
+        if (!pages.length) return;
+        var match = raw ? document.querySelector('.fb-page[data-page="'+raw+'"]') : null;
+        if (match) {
+          pages.forEach(function(p){ p.style.display = (p===match) ? '' : 'none'; });
+          window.scrollTo(0,0);
+        } else if (!document.querySelector('.fb-page:not([style*="display: none"])')) {
+          pages[0].style.display = '';
+          for (var i=1;i<pages.length;i++) pages[i].style.display = 'none';
+        }
+      }
+      window.addEventListener('hashchange', route);
+      if (document.readyState !== 'loading') route();
+      else window.addEventListener('DOMContentLoaded', route);
+    })();
+  </script>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Flora Botanica</p>
+      <p class="footer-meta">EST · MMXXVI &nbsp;·&nbsp; A Private Membership Association</p>
+      <p class="footer-meta soft">Apothecary · Microscopy · Wellness</p>
+    </div>
+  </footer>
+
+  <script src="editor.js?v=11"></script>
+</body>
+</html>
