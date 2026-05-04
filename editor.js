@@ -105,21 +105,11 @@
 
   // Brand palette
   const PALETTE = [
-    { name: 'White',       hex: '#ffffff' },
-    { name: 'Cream',       hex: '#faf8f3' },
-    { name: 'Paper',       hex: '#f6f2e8' },
-    { name: 'Warm Cream',  hex: '#f2e7ce' },
-    { name: 'Pale Pink',   hex: '#e9cfc9' },
-    { name: 'Lavender',    hex: '#c4b5d8' },
-    { name: 'Soft Blue',   hex: '#b4c8d6' },
-    { name: 'Gold Foil',   hex: '#c8a878' },
-    { name: 'Matcha',      hex: '#8fa272' },
-    { name: 'Grasses',     hex: '#7d9a5d' },
-    { name: 'Jade',        hex: '#6b8e7f' },
+    { name: 'Cream',       hex: '#faf5ea' },
+    { name: 'Warm Ivory',  hex: '#f0e6d2' },
+    { name: 'Dusty Rose',  hex: '#d4a5a5' },
+    { name: 'Rosewood',    hex: '#9c6b65' },
     { name: 'Sage',        hex: '#7a8a6e' },
-    { name: 'Forest',      hex: '#2d3a28' },
-    { name: 'Soft',        hex: '#7a756a' },
-    { name: 'Ink',         hex: '#1a1a17' },
   ];
 
   // Populate text-color swatches
