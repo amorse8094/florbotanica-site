@@ -1,4 +1,8 @@
 (() => {
+  // EDIT-MODE GATE: only load the editor when the URL has ?edit=1
+  // Clients on the bare URL see nothing — no toolbar, no edit affordances.
+  if (new URLSearchParams(location.search).get('edit') !== '1') return;
+
   const STYLE = `
     .fb-edit-toolbar{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;display:flex;gap:.5rem;font-family:Inter,sans-serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;flex-wrap:wrap;max-width:40vw;justify-content:flex-end}
     .fb-edit-toolbar button{background:#1a1a17;color:#f6f2e8;border:1px solid #1a1a17;padding:.8rem 1.2rem;cursor:pointer;letter-spacing:inherit;font-family:inherit;font-size:inherit;transition:all .2s}
